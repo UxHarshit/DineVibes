@@ -1,0 +1,8 @@
+<resources>
+    <color name="primary_blue">#005BB5</color> <!-- Example blue color -->
+    <color name="white">#f9fafb</color>
+    <color name="black">#000000</color>
+    <color name="dark_gray">#333333</color>
+    <color name="button_background">#383E4B</color> <!-- Button background color -->
+    <color name="button_border">#111827</color> <!-- Button border color -->
+</resources>

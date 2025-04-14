@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#E5E7EB"
+                android:clickable="true"
+                android:contentDescription="items"
+                android:cropToPadding="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/baseline_shopping_basket_24"
+                app:shapeAppearance="@style/Circular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Items"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#E5E7EB"
+                android:clickable="true"
+                android:contentDescription="items"
+                android:cropToPadding="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/baseline_access_time_filled_24"
+                app:shapeAppearance="@style/Circular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/inter_bold"
+                android:maxLines="1"
+                android:text="Pickup"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#E5E7EB"
+                android:clickable="true"
+                android:contentDescription="items"
+                android:cropToPadding="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:shapeAppearance="@style/Circular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Book Hall"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/maintainanceButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#E5E7EB"
+                android:clickable="true"
+                android:contentDescription="items"
+                android:cropToPadding="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/baseline_carpenter_24"
+                app:shapeAppearance="@style/Circular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/inter_bold"
+                android:maxLines="1"
+                android:text="Maintenance"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+        <TextView
+            android:text="Quick Menu"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.cardview.widget.CardView
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+
+            app:cardElevation="1dp"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    app:contentPadding="15dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/baseline_local_dining_24"
+                    android:background="#E5E7EB"
+                    android:cropToPadding="true"
+                    app:shapeAppearance="@style/RoundedSquare"
+                    android:scaleType="fitCenter" />
+                <TextView
+                    android:text="Your Orders"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="21sp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="arrow"
+                    android:scaleType="center"
+                    android:src="@drawable/baseline_chevron_right_24"
+                    android:layout_width="20dp"
+                    android:layout_height="27dp"
+                    app:tint="@color/dark_gray" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Your Requests -->
+        <androidx.cardview.widget.CardView
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="1dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/maintainanceButtonNav"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:baselineAligned="false"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    app:contentPadding="15dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/baseline_carpenter_24"
+                    android:background="#E5E7EB"
+                    android:cropToPadding="true"
+                    app:shapeAppearance="@style/RoundedSquare"
+                    android:scaleType="fitCenter" />
+                <TextView
+                    android:text="Maintenance Requests"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="21sp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/arrowRightRequestButtonId"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="arrow right "
+                    android:src="@drawable/baseline_chevron_right_24"
+                    android:scaleType="center"
+                    app:tint="@color/dark_gray"
+                    android:layout_width="20dp"
+                    android:layout_height="27dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
