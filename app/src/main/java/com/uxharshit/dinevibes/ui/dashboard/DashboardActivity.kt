@@ -17,8 +17,6 @@ class DashboardActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDashboardBinding
     private lateinit var bottomNavigationView: BottomNavigationView
 
-    private lateinit var profileFragment: ProfileFragment
-
     override fun onStart() {
         super.onStart()
         val authRepository = AuthRepository(this).getToken()

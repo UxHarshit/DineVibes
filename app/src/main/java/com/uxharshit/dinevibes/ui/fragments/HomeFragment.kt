@@ -26,6 +26,11 @@ class HomeFragment(private val role: String?) : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        if(role == "Student"){
+            binding.adminMenuLayout.visibility = View.GONE
+        }
+
         binding.maintainanceButton.setOnClickListener {
             if (role == "Student") {
                 Toast.makeText(requireContext(), "You are not allowed to create a request", Toast.LENGTH_SHORT).show()
@@ -34,6 +39,7 @@ class HomeFragment(private val role: String?) : Fragment() {
             val intent = Intent(requireContext(), MaintenanceActivity::class.java)
             startActivity(intent)
         }
+
         binding.maintainanceButtonNav.setOnClickListener {
             if (role == "Student") {
                 Toast.makeText(requireContext(), "You are not allowed to create a request", Toast.LENGTH_SHORT).show()
@@ -41,6 +47,17 @@ class HomeFragment(private val role: String?) : Fragment() {
             }
             val intent = Intent(requireContext(), RequestStatusActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.manageRequestButton.setOnClickListener {
+            if (role == "Student") {
+                Toast.makeText(
+                    requireContext(),
+                    "You are not allowed to create a request",
+                    Toast.LENGTH_SHORT
+                ).show()
+                return@setOnClickListener
+            }
         }
     }
 

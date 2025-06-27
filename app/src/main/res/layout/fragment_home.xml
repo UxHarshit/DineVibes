@@ -138,133 +138,209 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <ScrollView
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
-        <TextView
-            android:text="Quick Menu"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/inter_bold"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <androidx.cardview.widget.CardView
-            android:orientation="horizontal"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="10dp"
-            app:cardCornerRadius="10dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackgroundBorderless"
-
-            app:cardElevation="1dp"
-            android:layout_marginTop="10dp"
-            android:baselineAligned="false"
-            android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        android:fillViewport="true"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
             <LinearLayout
-                android:gravity="center_vertical"
+                android:id="@+id/linearLayout6"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    app:contentPadding="15dp"
-                    android:layout_margin="8dp"
-                    android:src="@drawable/baseline_local_dining_24"
-                    android:background="#E5E7EB"
-                    android:cropToPadding="true"
-                    app:shapeAppearance="@style/RoundedSquare"
-                    android:scaleType="fitCenter" />
-                <TextView
-                    android:text="Your Orders"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:fontFamily="@font/inter_bold"
-                    android:textSize="21sp"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"/>
-                <ImageView
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:contentDescription="arrow"
-                    android:scaleType="center"
-                    android:src="@drawable/baseline_chevron_right_24"
-                    android:layout_width="20dp"
-                    android:layout_height="27dp"
-                    app:tint="@color/dark_gray" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Quick Menu"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFFFFF"
+                    android:baselineAligned="false"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_margin="8dp"
+                            android:background="#E5E7EB"
+                            android:cropToPadding="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/baseline_local_dining_24"
+                            app:contentPadding="15dp"
+                            app:shapeAppearance="@style/RoundedSquare" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="Your Orders"
+                            android:textSize="21sp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="arrow"
+                            android:scaleType="center"
+                            android:src="@drawable/baseline_chevron_right_24"
+                            app:tint="@color/dark_gray" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--        Your Requests -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/maintainanceButtonNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFFFFF"
+                    android:baselineAligned="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_margin="8dp"
+                            android:background="#E5E7EB"
+                            android:cropToPadding="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/baseline_carpenter_24"
+                            app:contentPadding="15dp"
+                            app:shapeAppearance="@style/RoundedSquare" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="Maintenance Requests"
+                            android:textSize="21sp" />
+
+                        <ImageView
+                            android:id="@+id/arrowRightRequestButtonId"
+                            android:layout_width="20dp"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="arrow right "
+                            android:scaleType="center"
+                            android:src="@drawable/baseline_chevron_right_24"
+                            app:tint="@color/dark_gray" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/adminMenuLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:text="Admin Menu"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:padding="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:fontFamily="@font/inter_bold"
+                                android:text="Manage Request"
+                                android:textSize="18sp" />
+                            <Button
+                                android:text="View"
+                                android:fontFamily="@font/inter_bold"
+                                android:id="@+id/manageRequestButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
 
-<!--        Your Requests -->
-        <androidx.cardview.widget.CardView
-            android:orientation="horizontal"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="10dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="1dp"
-            android:layout_marginTop="10dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:id="@+id/maintainanceButtonNav"
-            android:foreground="?attr/selectableItemBackgroundBorderless"
-            android:baselineAligned="false"
-            android:background="#FFFFFF"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    app:contentPadding="15dp"
-                    android:layout_margin="8dp"
-                    android:src="@drawable/baseline_carpenter_24"
-                    android:background="#E5E7EB"
-                    android:cropToPadding="true"
-                    app:shapeAppearance="@style/RoundedSquare"
-                    android:scaleType="fitCenter" />
-                <TextView
-                    android:text="Maintenance Requests"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:fontFamily="@font/inter_bold"
-                    android:textSize="21sp"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"/>
-                <ImageView
-                    android:id="@+id/arrowRightRequestButtonId"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:contentDescription="arrow right "
-                    android:src="@drawable/baseline_chevron_right_24"
-                    android:scaleType="center"
-                    app:tint="@color/dark_gray"
-                    android:layout_width="20dp"
-                    android:layout_height="27dp"/>
 
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
