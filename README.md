@@ -18,31 +18,38 @@ DineVibes is an Android app designed to efficiently manage the **LIET Pantry** a
 
 Here are some key screenshots of the app in order:
 
-* **Sign-Up Page** <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image3.jpeg" width="400" />
+* **Sign-Up Page**
+  * <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image3.jpeg" width="400" />
 
   * Sign-up page for new users to create their account.
 
-* **Login Page** <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image4.jpeg" width="400" />
+* **Login Page**
+  * <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image4.jpeg" width="400" />
 
   * Login page for returning users to sign in.
 
-* **Forgot Password** <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image6.jpeg" width="400" />
+* **Forgot Password**
+  * <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image6.jpeg" width="400" />
 
   * Forgot Password page where users can reset their account password.
 
-* **Request Status** <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image1.jpeg" width="400" />
+* **Request Status**
+  * <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image1.jpeg" width="400" />
 
   * Request Status page showing the submission details, including description and location, with statuses such as **Approved**, **Pending**, and **Rejected**.
 
-* **Maintenance Request** <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image2.jpeg" width="400" />
+* **Maintenance Request**
+  * <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image2.jpeg" width="400" />
 
   * Maintenance Request page where users can select a category, describe the issue, set a priority level, and submit their requests.
 
-* **Admin Profile** <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image7.jpeg" width="400" />
+* **Admin Profile**
+  * <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image7.jpeg" width="400" />
 
   * Admin profile page, showing contact details and order history, as well as user profile management.
 
-* **Main Screen** <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image8.jpeg" width="400" />
+* **Main Screen**
+  * <img src="https://raw.githubusercontent.com/UxHarshit/DineVibes/refs/heads/master/images/image8.jpeg" width="400" />
 
   * The home page of the app with options for **Items**, **Pickup**, **Book Hall**, and **Maintenance**.
 
